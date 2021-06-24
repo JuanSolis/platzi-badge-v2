@@ -18,8 +18,8 @@ class Badge extends React.Component {
                 <h1>{this.props.nombre} <br/> {this.props.apellido}</h1>
             </div>
             <div className="Badge__section-info">
-                <h3>{this.props.nombreTrabajo}</h3>
-                <div>@{this.props.github}</div>
+                <h3>{this.props.tituloTrabajo}</h3>
+                <div>@{this.props.twitter}</div>
             </div>
             <div className="Badge__footer">
                 #platziconf
