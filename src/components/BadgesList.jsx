@@ -15,7 +15,6 @@ class BadgesList extends React.Component{
                                     <span className="Twitter"><i className="fab fa-twitter"></i> @{badge.twitter}</span>
                                     <span className="TituloTrabajo">{badge.jobTitle}</span>
                                 </div>
-                                
                             </li>
                         );
                     })
