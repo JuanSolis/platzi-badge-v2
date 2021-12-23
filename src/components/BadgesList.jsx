@@ -8,6 +8,7 @@ class BadgesList extends React.Component{
         super(props);
     }
     render(){
+
         return(
             this.props.loading 
             ? 
@@ -44,7 +45,7 @@ class BadgesList extends React.Component{
             :
             <ul className="list-unstyled">
                 {
-                    this.props.Badges.map((badge) =>{
+                    this.props.Badges.reverse().map((badge) =>{
                         return(
                             <li className="Card__badge" key={badge.id}>
                                 <img className="Avatar__img" src={badge.avatarUrl} alt="userImg" />

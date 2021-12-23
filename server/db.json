@@ -217,22 +217,13 @@
       "avatarUrl": "https://www.gravatar.com/avatar/e19db69107841cab64edd704fa177509?d=identicon"
     },
     {
-      "id": "9c2c7b04-532f-4c13-abbd-bcf694d9fe11",
-      "nombre": "Leonie",
-      "apellido": "Towne",
-      "email": "Reyes.Senger@yahoo.com",
-      "tituloTrabajo": "Customer Markets Coordinator",
-      "twitter": "LeonieTowne65019-2735",
-      "avatarUrl": "https://www.gravatar.com/avatar/2418114906f2bea38d7485340a7f0461?d=identicon"
-    },
-    {
       "nombre": "Juan",
       "apellido": "Solis",
       "email": "jsolis@cemaco.com",
       "tituloTrabajo": "Developer",
-      "twitter": "JSolisDev",
+      "twitter": "JSolDev",
       "avatarUrl": "https://www.gravatar.com/avatar/1270837ca6ca02939dae050a82f0173c?d=identicon",
-      "id": "XpmTPxZ"
+      "id": "MVfm-Wa"
     }
   ]
 }

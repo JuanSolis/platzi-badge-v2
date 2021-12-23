@@ -55,16 +55,18 @@ class BadgeNew extends React.Component{
 
         try{
             this.setState({
-                loading: false
+                loading: false,
+                flag:true
             });
             await api.badges.create(this.state.form);
-            console.log(this.state.form);
+            this.props.history.push("/badges");
         }catch(error){
             this.setState({
                 loading: false, 
+                flag: false,
                 error: error
             });
-            console.log("Error User no creado");
+           
         }
         
     }
@@ -76,6 +78,13 @@ class BadgeNew extends React.Component{
                     <img className="img-fluid" src={Header} alt="Header Background" />
                 </div>
                 <div className="container">
+                    {
+                        this.state.flag && (
+                            <div class="alert alert-success" role="alert">
+                                Badge <span class="alert-link">Creado!</span>.
+                            </div>
+                        )
+                    }
                     <div className="row">
                         <div className="col-6">
                             <Badge 
