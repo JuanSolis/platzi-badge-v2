@@ -1,0 +1,26 @@
+.landing-Page{
+    background: url('../../images/stars.svg'), #1B1B25;
+    min-height: calc(100vh - (44px + 1rem));
+    color: white;
+    overflow: hidden;
+}
+
+
+.landing-Page .landing-Title{
+    text-align: center;
+}
+
+.landing-Page .Badges__buttons{
+    justify-content: center;
+}
+
+@media screen and (min-width: 576px) {
+    .landing-Page .Badges__buttons{
+        justify-content: flex-start;
+    }
+
+    .landing-Page .landing-Title{
+        text-align: left;
+    }
+}
+

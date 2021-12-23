@@ -1,0 +1,10 @@
+.notFound-container{
+    background: url('../../images/stars.svg'), #1B1B25;
+    min-height: calc(100vh - (44px + 1rem));
+    color: white;
+    overflow: hidden;
+}
+
+.notFound-container img{
+    max-height: 90vh;
+}

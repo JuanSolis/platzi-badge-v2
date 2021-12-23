@@ -2,20 +2,11 @@ import React from 'react';
 
 class BadgeForm extends React.Component {
    
-    handleClick = (e) => {
-        console.log("Buton Clickeadlo");
-    }
-
-    handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form Enviado");
-    }
-    
     render(){
         return(
             <div>
                 <h1>Nuevo Parcipante</h1>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.props.onSubmit}>
                     <div className="mb-3">
                         <label className="form-label">Primer Nombre</label>
                         <input onChange={this.props.onChange} className="form-control" type="text" name="nombre" value={this.props.formValues.nombre} />
@@ -36,7 +27,7 @@ class BadgeForm extends React.Component {
                         <label className="form-label">Twitter</label>
                         <input onChange={this.props.onChange} className="form-control" type="text" name="twitter" value={this.props.formValues.twitter} />
                     </div>
-                    <button onClick={this.handleClick} className="btn btn-primary">Save</button>
+                    <button className="btn btn-primary">Save</button>
                 </form>
             </div>
         );
